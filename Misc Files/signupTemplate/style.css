@@ -1,0 +1,55 @@
+.login {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+body {
+    margin: 0;
+}
+
+.login-fields {
+    font-size: x-large;
+    border : 3px solid;
+    border-radius: 15px;
+    width: 30%;
+    margin: auto;
+}
+
+.field-group {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.signup-link{
+    text-align: right;
+    font-style: italic;
+    font-size: x-small;
+    margin: 5px;
+}
+
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(9, 149, 184);
+    border-bottom: 3px solid;
+}
+
+.navbar li{
+    float: left;
+    border-right: 1px solid;
+}
+
+.nav-button {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-button:hover{
+    background-color: rgb(7, 33, 161);
+}
