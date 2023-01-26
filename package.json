@@ -19,7 +19,7 @@
     "express-handlebars": "^5.2.0",
     "express-session": "^1.17.1",
     "i": "^0.3.7",
-    "mysql2": "^2.2.5",
+    "pg":"^8.8.0",
     "sequelize": "^6.3.5"
   }
 }
