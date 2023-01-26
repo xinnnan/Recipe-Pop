@@ -1,8 +1,3 @@
-.env
-*.log
-public/*.bundle.js
-public/bundle.js
-.DS_STORE
-.vscode
-package-lock.json
 node_modules
+.env
+.DS_Store
