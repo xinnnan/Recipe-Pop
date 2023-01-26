@@ -6,28 +6,28 @@ const Footer = () => (
       <tbody>
         <tr style={{ display: 'inline-block' }}>
           <td>
-            <a href="" target="_blank">
+            <a href="test" target="_blank">
               <span
                 style={{ fontSize: '3em', color: 'black', padding: '0 4px' }}
               >
                 <i className="link fab fa-github"></i>
               </span>
             </a>
-            <a href="" target="_blank">
+            <a href="test" target="_blank">
               <span
                 style={{ fontSize: '3em', color: 'black', padding: '0 4px' }}
               >
                 <i className="link fab fa-linkedin"></i>
               </span>
             </a>
-            <a href="" target="_blank">
+            <a href="test" target="_blank">
               <span
                 style={{ fontSize: '3em', color: 'black', padding: '0 4px' }}
               >
                 <i className="link fab fa-npm"></i>
               </span>
             </a>
-            <a href="" target="_blank">
+            <a href="test/" target="_blank">
               <span
                 style={{ fontSize: '3em', color: 'black', padding: '0 4px' }}
               >
@@ -35,7 +35,7 @@ const Footer = () => (
               </span>
             </a>
             <a
-              href=""
+              href="test"
               target="_blank"
             >
               <span
@@ -44,7 +44,7 @@ const Footer = () => (
                 <i className="link fab fa-youtube-square"></i>
               </span>
             </a>
-            <a href="" target="_blank">
+            <a href="test" target="_blank">
               <span
                 style={{ fontSize: '3em', color: 'black', padding: '0 4px' }}
               >
@@ -52,7 +52,7 @@ const Footer = () => (
               </span>
             </a>
             <a
-              href=""
+              href="test"
               target="_blank"
             >
               <span

@@ -2,7 +2,7 @@ const User = require('./User');
 
 const bcrypt = require('bcryptjs');
 
-process.stdout.write('What is your username?');
+process.stdout.write('What is your name?');
 process.stdin.once('data', function(name) {
   process.stdout.write('What is your email?');
   process.stdin.once('data', function(email) {
