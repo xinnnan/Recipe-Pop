@@ -1,7 +1,6 @@
 {
   "name": "recipepop",
   "version": "1.0.0",
-  "description": "Quick start cli for single page React application",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -12,7 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "biz"
+    "recipepop"
   ],
   "author": "Me",
   "license": "MIT",
