@@ -1,10 +1,8 @@
 const Sequelize = require('sequelize');
 require('dotenv').config();
-const Pool = require('pg').Pool
 
 let sequelize;
 
-const Sequelize = require('sequelize');
 sequelize = new Sequelize(process.env.DATABASE_URL, {
     dialectOptions: {
       ssl: {
