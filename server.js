@@ -37,3 +37,11 @@ app.use(routes);
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
+
+sequelize.sync()
+    .then(() => {
+        console.log('Tables created successfully');
+    })
+    .catch(err => {
+        console.error('Error creating tables:', err);
+    });
