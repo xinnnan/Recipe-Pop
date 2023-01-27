@@ -1,6 +1,6 @@
 # Recipe-Pop
 
-*A Recipe Create Sharing Web Application*
+*A Recipe Create & Sharing Web Application*
 
 The application allows users to create an account, sign in and share their favourite recipes. They can also view and search other users' recipes.
 Users can search recipes by name, ingredients, or author. They can also view other users' recipes, but they cannot edit or delete them.
