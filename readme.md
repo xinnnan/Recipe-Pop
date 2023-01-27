@@ -19,26 +19,25 @@ If you prefer a live website over the following screenshots, feel free to **chec
 
 ## Technologies Used
 The application is deployed using **Heroku**.
-**Node.j** and **Express.js** can be used to create a RESTful API for the application.
-**Handlebars.j** can be used as the template engine for rendering the views.
-**Heroku Postgresql** and the Sequelize ORM can be used for the database to store the users and recipes information.
-The application has both GET and POST routes for retrieving and adding new data.
+**Node.j** and **Express.js** are used to create a RESTful API for the application.
+**Handlebars.j** is used as the template engine for rendering the views.
+**cloudinary** is used to store pictures in the cloud.
+**Heroku Postgresql** and the Sequelize ORM are used for the database to store the users and recipes information.
+The application has both **GET and POST** routes for retrieving and adding new data.
 **bcrypt** for password hashing and salting.
 The folder structure of the project follows the **MVC paradigm**.
 The application has authentication using **express-session and cookies** to secure the routes.
 The **API keys and sensitive information** are protected using **environment variables**.
-The application will have a polished **Responsive UI** with a good user experience.
+The application has a polished **Responsive UI** with a good user experience.
 
-### Setup & Configuration
+### Active Development
 
+**edamam** for 3rd party recipe integration and nutrition analysis. 
+Social media Single Sign On Feature with sharing feature. 
+Comment and Like features. 
 
 
 ### Building
-
-
-
-
-### Automated deployment to Heroku
 
 
 
