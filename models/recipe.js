@@ -1,34 +1,36 @@
-const { Model, DataTypes, Sequelize } = require('sequelize');
-const bcrypt = require('bcrypt');
+const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
-const User = require('./User');
+const Recipe = require('./recipe');
 
 
 const Recipe=sequelize.define('Recipe',{
     id:{
-        type: Sequelize.INTEGER,
+        type: sequelize.INTEGER,
         allowNull: false,
         primaryKey: true,
         autoIncrement: true
     },
     title:{
-        type:Sequelize.STRING,
+        type:sequelize.STRING,
         allowNull:false
     },
     ingredients:{
-        type:Sequelize.TEXT,
+        type:sequelize.TEXT,
         allowNull:false
     },
     instructions:{
-        type:Sequelize.TEXT,
+        type:sequelize.TEXT,
         allowNull:false
     },
     userID:{
-        type:Sequelize.INTEGER,
+        type:sequelize.INTEGER,
         references:{
             model:User,
             key:'id'
         }
     }
 
-})
+});
+
+module.exports = Recipe;
+
