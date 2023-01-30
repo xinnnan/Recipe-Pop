@@ -1,6 +1,4 @@
 const sequelize = require('../config/connection');
-const Recipe = require('./recipe');
-
 
 const Recipe=sequelize.define('Recipe',{
     id:{
