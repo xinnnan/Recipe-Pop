@@ -1,6 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 const User = require('./User');
+const Recipe = require('./Recipe');
 
 const Recipe=sequelize.define('Recipe',{
     id:{
@@ -30,5 +31,7 @@ const Recipe=sequelize.define('Recipe',{
     }
 
 });
+
+module.exports = { User, Recipe };
 
 
