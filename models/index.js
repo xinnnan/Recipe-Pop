@@ -1,5 +1,5 @@
-const { User } = require('./models');
-const { Recipe } = require('./models');
+const  User  = require('./User');
+const  Recipe  = require('./Recipe');
 
 Recipe.belongsTo(User,{
     foreignKey:'userID',

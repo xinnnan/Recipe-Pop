@@ -1,6 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
-const { User } = require('./models');
+const  User  = require('./User');
 
 
 class Recipe extends Model {}
