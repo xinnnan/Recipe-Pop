@@ -30,5 +30,5 @@ const Recipe=sequelize.define('Recipe',{
     }
 
 });
-module.exports = { User, Recipe };
+
 
