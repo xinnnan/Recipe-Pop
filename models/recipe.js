@@ -4,8 +4,7 @@ const User = require('./User');
 
 
 class Recipe extends Model {}
-Recipe.init(
-  {
+Recipe.init({
     id:{
         type: DataTypes.INTEGER,
         allowNull: false,
@@ -30,7 +29,7 @@ Recipe.init(
             model:User,
             key:'id',
     },
-  },
+  },},{
     sequelize,
     modelName: 'recipe',
 });
