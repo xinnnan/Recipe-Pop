@@ -3,25 +3,25 @@ const User = require('./User');
 
 const Recipe=sequelize.define('Recipe',{
     id:{
-        type: sequelize.INTEGER,
+        type: DataTypes.INTEGER,
         allowNull: false,
         primaryKey: true,
         autoIncrement: true
     },
     title:{
-        type:sequelize.STRING,
+        type:DataTypes.STRING,
         allowNull:false
     },
     ingredients:{
-        type:sequelize.TEXT,
+        type:DataTypes.TEXT,
         allowNull:false
     },
     instructions:{
-        type:sequelize.TEXT,
+        type:DataTypes.TEXT,
         allowNull:false
     },
     userID:{
-        type:sequelize.INTEGER,
+        type:DataTypes.INTEGER,
         references:{
             model:User,
             key:'id'
