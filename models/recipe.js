@@ -29,8 +29,11 @@ Recipe.init({
             model:User,
             key:'id',
     },
-  },},{
+  },
+},
+{
     sequelize,
+    timestamps: true,
     modelName: 'recipe',
 });
 
