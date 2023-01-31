@@ -5,7 +5,7 @@ const User = require('./User');
 
 class Recipe extends Model {}
 Recipe.init({
-    id:{
+    recipeid:{
         type: DataTypes.INTEGER,
         allowNull: false,
         primaryKey: true,
