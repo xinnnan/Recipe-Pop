@@ -1,17 +1,26 @@
-<h2>Login</h2>
+<h1 class="login">Login</h1>
 
-<form class="form login-form">
-  <div class="form-group">
-    <label for="email-login">email:</label>
-    <input class="form-input" type="text" id="email-login" />
-  </div>
-  <div class="form-group">
-    <label for="password-login">password:</label>
-    <input class="form-input" type="password" id="password-login" />
-  </div>
-  <div class="form-group">
-    <button class="btn btn-primary" type="submit">login</button>
-  </div>
-</form>
+    
+    <form class="form login-fields">
+
+    <div class="field-group">
+        <label class="box-label" for="email-input">Email:</label>
+        <input class="input-field" type="text" id="email-input"/>
+    </div>
+
+    <div class="field-group">
+        <label class="box-label" for="password-input">Password:</label>
+        <input class="input-field" type="text" id="password-input"/>
+    </div>
+
+    <div class="field-group">
+        <button class="submit-button" type="submit" id="email-input">Login</button>
+    </div>
+
+    <div class="signup-link">
+        <p>Dont have an account?<a href="#">Click here to create one.</a></p>
+    </div>
+
+    </form>
 
 <script src="/js/login.js"></script>
