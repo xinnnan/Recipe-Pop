@@ -16,6 +16,12 @@
         "ingredients": "Chicken, Sugar, Salt",
         "instructions": "Just cook",
         "userID":1
+      },
+      {
+        "title": "Baked Chicken",
+        "ingredients": "Chicken, Sugar, Salt",
+        "instructions": "Just cook",
+        "userID":1
       }
    
   ]
