@@ -1,5 +1,5 @@
 const  User  = require('./User');
-const  Recipe = require('./Recipe.js');
+const  Recipe = require('./recipe.js');
 // const  Recipe  = require('./Recipe');
 
 Recipe.belongsTo(User,{
