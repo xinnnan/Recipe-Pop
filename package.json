@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
+
+    "prestart": "next build",
+    "start": "next start -p ${PORT}",
     "seed": "node seeds/seed.js"
   },
   "keywords": [],
