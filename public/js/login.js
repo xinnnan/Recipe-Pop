@@ -19,6 +19,18 @@ const loginFormHandler = async (event) => {
   }
 };
 
+const toSignupPage = async (event) => {
+try {
+  res.render('signup');
+} catch (err) {
+  res.status(500).json(err);
+}
+};
+
 document
-  .querySelector('.login-fields')
+  .querySelector('.submit-button')
   .addEventListener('submit', loginFormHandler);
+
+  document
+  .querySelector('.to-signup')
+  .addEventListener('click', toSignupPage);
