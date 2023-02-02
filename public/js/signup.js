@@ -8,7 +8,7 @@ const signup = async (event) => {
     const username = document.querySelector('#username-input').value.trim();
     if (err) throw err;
     console.log("Connected!");
-    var newUser = "INSERT INTO user (name, email, password) VALUES ('" + username + "', '" + email + "', '" + password + "')";
+    var newUser = "INSERT INTO user (email, password) VALUES ('" + email + "', '" + password + "')";
 
     connection.query(newUser, function (err, result) {
         if (err) throw err;
