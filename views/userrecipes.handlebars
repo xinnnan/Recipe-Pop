@@ -1,0 +1,27 @@
+<div class="recipedetail">
+  <h4>Popped Recipe: {{title}}</h4>
+  <div class="author">
+    <h6 class="userID col-md-6">Author: {{userID}}</h6>
+  </div>
+ {{#if ingredients}}
+  <div class="ingredients col-md-8">Ingredients: {{ingredients}}</div>
+{{else}}
+  <div class="ingredients col-md-8">Ingredients: Not provided</div>
+{{/if}}
+   {{#if instructions}}
+  <div class="instructions col-md-8">Instructions: {{instructions}}</div>
+{{else}}
+  <div class="instructions col-md-8">Instructions: Not provided</div>
+{{/if}}
+
+  </div>
+</div>
+
+
+{{!-- <script src="../public/js/recipedetail.js"></script> --}}
+{{!-- <h1>{{title}}</h1>
+<h2>{{author}}</h2>
+<ul>
+<h3>{{ingredients}}</h3>
+<h3>{{instructions}}</h3>
+</ul> --}}
