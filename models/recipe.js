@@ -2,7 +2,6 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 const  User  = require('./User');
 
-
 class Recipe extends Model {}
 Recipe.init({
     recipeid:{
@@ -34,7 +33,7 @@ Recipe.init({
 {
     sequelize,
     timestamps: true,
-    modelName: 'recipe',
+    modelName: 'Recipe',
 });
 
 module.exports = Recipe;
