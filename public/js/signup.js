@@ -6,7 +6,7 @@ const signup = async (event) => {
     const email = document.querySelector('#email-input').value.trim();
     const password = document.querySelector('#password-input').value.trim();
     const username = document.querySelector('#username-input').value.trim();
-    if (err) throw err;
+    if (err) console.log (err);
     console.log("Connected!");
     var newUser = "INSERT INTO user (email, password) VALUES ('" + email + "', '" + password + "')";
 
