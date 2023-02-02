@@ -12,8 +12,11 @@ router.get('/:recipeid', async (req,res)=>{
         }
       });
       //  res.json(result);
-       res.render('recipedetail', {result});
-       console.log(result);
+      //  res.render('recipedetail', {result});
+        console.log(result);
+      //  console.log(res.render('recipedetail', {result}))
+      const { userID, title, ingredients, instructions } = result[0].dataValues;
+       res.render('recipedetail', { userID, title, ingredients, instructions });
     } catch (err) {
         console.log(err);
         res.status(404).json(err);

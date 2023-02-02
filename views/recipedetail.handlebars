@@ -1,17 +1,17 @@
 <div class="recipedetail">
-  <h1>Recipe:{{title}}</h1>
+  <h4>Popped Recipe: {{title}}</h4>
   <div class="author">
-    <h2>Author: {{userID}}</h2>
+    <h6 class="userID col-md-6">Author: {{userID}}</h6>
   </div>
  {{#if ingredients}}
-  <p class="ingredients">Ingredients: {{ingredients}}</p>
+  <div class="ingredients col-md-8">Ingredients: {{ingredients}}</div>
 {{else}}
-  <p class="ingredients">Ingredients: Not provided</p>
+  <div class="ingredients col-md-8">Ingredients: Not provided</div>
 {{/if}}
    {{#if instructions}}
-  <p class="instructions">Instructions: {{instructions}}</p>
+  <div class="instructions col-md-8">Instructions: {{instructions}}</div>
 {{else}}
-  <p class="instructions">Instructions: Not provided</p>
+  <div class="instructions col-md-8">Instructions: Not provided</div>
 {{/if}}
 
   </div>
