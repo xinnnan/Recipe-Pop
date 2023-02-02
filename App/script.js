@@ -30,10 +30,15 @@ const searchResults = document.querySelector('.search-btn');
         <img src="${result.recipe.image}"> 
         <div class="flex-container">
           <h1 class="title">${result.recipe.label}</h1>
-          <a class='view-btn' href='${result.recipe.url}'>View Recipes</a>
+          <a class='view-btn' href=${result.recipe.url}>View Recipes</a>
         </div>
-         <p class="recipe-description">Calorie: 200</p>
+         <p class="recipe-description">${result.recipe.calories.toFixed(2)} Calories</p>
          </div>`
     })
     container.innerHTML = userInput;
 }
+
+
+function refreshPage(){
+   window.location.reload();
+} 
