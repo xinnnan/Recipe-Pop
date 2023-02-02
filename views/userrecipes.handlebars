@@ -1,20 +1,16 @@
-<div class="recipedetail">
-  <h4>Popped Recipe: {{title}}</h4>
-  <div class="author">
-    <h6 class="userID col-md-6">Author: {{userID}}</h6>
-  </div>
- {{#if ingredients}}
-  <div class="ingredients col-md-8">Ingredients: {{ingredients}}</div>
-{{else}}
-  <div class="ingredients col-md-8">Ingredients: Not provided</div>
-{{/if}}
-   {{#if instructions}}
-  <div class="instructions col-md-8">Instructions: {{instructions}}</div>
-{{else}}
-  <div class="instructions col-md-8">Instructions: Not provided</div>
-{{/if}}
+<div class="userrecipes">
+  <h4>Popped Recipe: {{userID}}</h4>
+<h1>{{ userID}}'s Recipes</h1>
 
-  </div>
+<ul>
+  {{#each result}}
+    <li>
+      <h2>{{title}}</h2>
+      <p>Ingredients: {{ingredients}}</p>
+      <p>Instructions: {{instructions}}</p>
+    </li>
+  {{/each}}
+</ul>
 </div>
 
 
