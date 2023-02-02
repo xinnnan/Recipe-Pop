@@ -1,4 +1,5 @@
 const loginFormHandler = async (event) => {
+  console.log("Login Button Pressed");
   event.preventDefault();
 
   const email = document.querySelector('#email-input').value.trim();
@@ -12,6 +13,7 @@ const loginFormHandler = async (event) => {
     });
 
     if (response.ok) {
+      console.log("Login Success");
       document.location.replace('/');
     } else {
       alert('Failed to log in');
@@ -25,7 +27,7 @@ const toSignupPage = async (event) => {
 };
 
 document
-  .querySelector('.submit-button')
+  .querySelector('.login-fields')
   .addEventListener('submit', loginFormHandler);
 
   document

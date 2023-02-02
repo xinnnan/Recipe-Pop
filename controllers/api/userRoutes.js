@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const {User}  = require('../../models');
+const { User }  = require('../../models');
 
 router.post('/login', async (req, res) => {
   try {
@@ -41,6 +41,19 @@ router.post('/logout', (req, res) => {
   } else {
     res.status(404).end();
   }
+});
+
+router.post('/signup', (req, res) => {
+  User.create({
+    email: req.body.email,
+    password: req.body.password
+  })
+    .then((newUser) => {
+      res.json(newUser);
+    })
+    .catch((err) => {
+      res.json(err);
+});
 });
 
 module.exports = router;
