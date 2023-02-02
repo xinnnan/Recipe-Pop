@@ -12,7 +12,8 @@ const signup = async (event) => {
 
     connection.query(newUser, function (err, result) {
         if (err) throw err;
-        console.log("User successfully added");
+        console.log("Successfully registered!");
+        document.location.replace('/');
     });
 };
 

@@ -1,3 +1,7 @@
+* {
+   --blue-accent:  rgb(88, 183, 207);
+  }
+
 body {
     margin: 0;
 }
@@ -32,15 +36,18 @@ body {
 
 .navbar ul{
     list-style-type: none;
+    height: 100px;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(9, 149, 184);
-    border-bottom: 3px solid;
+    background-color: var(--blue-accent);
+    border-bottom: 1px solid;
 }
 
 .navbar li{
     float: left;
+    height: 100%;
+    margin:auto;
     border-right: 1px solid;
 }
 
