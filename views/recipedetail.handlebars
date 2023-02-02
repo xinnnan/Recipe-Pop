@@ -1,10 +1,19 @@
 <div class="recipedetail">
-  <h1>{{title}}</h1>
+  <h1>Recipe:{{title}}</h1>
   <div class="author">
     <h2>Author: {{userID}}</h2>
   </div>
+ {{#if ingredients}}
   <p class="ingredients">Ingredients: {{ingredients}}</p>
+{{else}}
+  <p class="ingredients">Ingredients: Not provided</p>
+{{/if}}
+   {{#if instructions}}
   <p class="instructions">Instructions: {{instructions}}</p>
+{{else}}
+  <p class="instructions">Instructions: Not provided</p>
+{{/if}}
+
   </div>
 </div>
 
