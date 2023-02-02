@@ -11,24 +11,24 @@
 
 <body>
   <header class="display-flex justify-space-between align-center p-2">
-    <h1>
-      User Registry
-    </h1>
+    <h1>Recipe-Pop</h1>
     {{#if logged_in}}
     <nav>
       <button class="btn" id="logout">logout</button>
     </nav>
+    {{{ body }}}
     {{/if}}
+
   </header>
   <main class="container container-fluid mt-5">
     {{{ body }}}
+     
   </main>
   <footer>
-      
   </footer>
 
   {{#if logged_in}}
-  <script src="/js/logout.js"></script>
+  <script src="../../public/js/logout.js"></script>
   {{/if}}
 </body>
 
